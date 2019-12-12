@@ -1,6 +1,5 @@
 # Crispcam Demo Outline
 
-<<<<<<< HEAD
 There are two flows for this demo:
 
 1. Anthos Service Mesh
@@ -8,24 +7,17 @@ There are two flows for this demo:
 
 You can show both and interleave them - but they have different flavours.
 
-## Step 1 - Login to the cluster
-=======
 ## Preparation
 
 ### Step 1 - Login to the cluster
->>>>>>> 9335669a03bac458a57fb618d962fdcbe288ed8c
 
 ```
 gcloud beta container clusters get-credentials demo-cluster-a --region europe-west1 --project crisp-retail-demo
 ```
 
-<<<<<<< HEAD
-## Step 2 - Load Kiali and Jaeger Proxies (Open Source Only)
+### Step 2 - Load Kiali and Jaeger Proxies (Open Source Only)
 
 **Note: You only need to do this if demonstrating open source**
-=======
-### Step 2 - Load Kiali and Jaeger Proxies
->>>>>>> 9335669a03bac458a57fb618d962fdcbe288ed8c
 
 ```bash
 trap 'kill %1; kill %2' SIGINT; \
@@ -83,11 +75,7 @@ Show how Firefox only shows red stars now and Chrome only shows yellow
 
 ## Step 4 - Show circuit breaking
 
-<<<<<<< HEAD
-### 6a - Background
-=======
-### 4a - Backgrouns
->>>>>>> 9335669a03bac458a57fb618d962fdcbe288ed8c
+### 4a - Background
 
 Point out the 'broken' service - it holds a TCP connection for 10 seconds before returning - by default most software will just wait for it to return.
 
@@ -129,15 +117,11 @@ Go back to the [kiali dashboard](http://localhost:20001/kiali/) and show how the
 
 Show Jaeger tracing - [Jaeger Dashboard](http://localhost:15032/)
 
-<<<<<<< HEAD
-## Step 9 - Cleanup
-=======
 ## Step 6 - Show ASM dashboard
 
 Show the demo CSM project and talk about SLO/SLA and healthchecking
 
 ## Step 7 - Cleanup
->>>>>>> 9335669a03bac458a57fb618d962fdcbe288ed8c
 
 Apply the cleanup file so it works for everyone again:
 
