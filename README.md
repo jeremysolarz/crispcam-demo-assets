@@ -117,11 +117,7 @@ Go back to the [kiali dashboard](http://localhost:20001/kiali/) and show how the
 
 Show Jaeger tracing - [Jaeger Dashboard](http://localhost:15032/)
 
-## Step 6 - Show ASM dashboard
-
-Show the demo CSM project and talk about SLO/SLA and healthchecking
-
-## Step 7 - Cleanup
+## Step 6 - Cleanup
 
 Apply the cleanup file so it works for everyone again:
 
